@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://kit.fontawesome.com/93f40e3df7.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <title>Curriculum Vitae</title>
+</head>
+<body>
+    <nav id="ladoIzquierdo">
+        <div class="container1">
+            <img  class="fotoPerfil" src="img/128391246_10224416152168646_4869869975638075381_n.jpg" alt="foto de Perfil" >
+           
+        </div>
+        <div class="menuIzquierdo">
+           
+            <a href="#" class="estu" onclick="estudios()">Estudios Académicos</a>
+
+            <a href="#" class="expe" onclick="experiencias()">Experiencia Laboral</a>
+
+            <a href="#" class="acer" onclick="acercaDeMi()">Acerca de Mi</a>
+
+            <a href="#" class="habi" onclick="habilidades1()">Habilidades</a>
+
+            <a href="#" class="info" onclick="informacion()">Información</a>
+        </div>
+</nav>
+<header id="headerPrincipal">
+    <div class ="nombre">
+        <h1 class="nombreTitulo">Nicolas Ezequiel Moen</h1>
+    </div>
+    <div id="barraP">
+        <div id="barraP2"></div>
+
+    </div>
+</header>
+<section id="principal">
+    <div class="estudios" id="estu">
+        <ul>
+            <li><h3>Tester QA</h3>
+                <strong>Educacion IT</strong>
+                <p>Realice la carrera de tester especializado en Educacion IT aprobando multiples cursos necesarios para adquirir todos los conocimientos necesarios.</p>
+            </li>
+            <li><h3>Desarrollador Web Full Stack</h3>
+                <strong>Digitalmind</strong>
+                <p>Carrera realizada en el ámbio de desarrollo web tanto en Front como en Back End.</p>
+            </li>
+        </ul>
+    </div>
+    <div class="experiencia" id="expe">
+        <ul>
+            <li><h3>Técnico en reparación</h3>
+                <strong>Agen S.R.L.</strong>
+                <p>Técnico en Reparación de netbooks, tengo conocimientos en software y hardware, también fui operador en la linea de ensamble del programaConectar Igualdad. Dependiente del Gobierno Nacional.</p>
+            </li>
+            <li><h3>Operador telefónico</h3>
+                <strong>AGIR S.R.L.</strong>
+                <p>Operador telefónico en el Departamento de Cobranzas del Banco Credicoop, gestionaba tareas de cobranzas y cumplimientos con respecto a deudores del banco, de forma activa .</p>
+            </li>
+            <li><h3>Ayudante/ Personal administrativo</h3>
+                <strong>Okey S.R.L.</strong>
+                <p>ayudante en el área de calidad de los productos en B.A.D.O.C (C.A.B.A.)</p>
+            </li>
+        </ul>
+    </div>
+    <div class="acercaDeMi" id="acer">
+        <ul>
+            <li>
+                <p>Tester Qa especializado, desarrollador Front & Back End y estudiante en la tecnicatura superior en la UTN. 
+                    <br>
+                Me destaco por mi capacidad de resoluciónde los diferentes escenarios que se me presenten, poseo la cualidad de mejorar los detalles para que cada proyecto sea realizado de la manera mas eficiente.
+                <br>
+                Me encuentro todo el tiempo capacitándome para adaptarme a las nuevas tecnologías y herramientas.
+                </p>
+            </li>
+        </ul>
+        </div>
+    <div class="habilidades" id="habi">
+        <ul>
+            <h3>Habilidades Blandas</h3>
+            <li>Creativo</li>
+            <li>Analítico</li>
+            <li>Organizado</li>
+            <li>Comprometido</li>
+            <li>Trabajo en Equipo</li>
+            <li>Fácil aprendizaje</li>
+            <li>Investigador</li>
+           
+
+        </ul>
+     </div>
+     <div class="informacion" id="info">
+        <div class="container2">
+            <h4><b>Nicolas Ezequiel Moen</b></h4>
+            <h5>Quality Assurance Tester</h5>
+            <p>Nacionalidad: Argentino</p>
+            <p>Estado Civil: Soltero</p>
+            <p>Edad: 29 Años</p>
+            <p>Localidad: Lomas del Mirador (Zona Oeste)</p>
+            <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+       </div>      
+        </div>
+     </div>
+</section>
+
+<button class="open-button" onclick="openForm()">Envíame un mensaje</button>
+<div class="formularioNico" id="miformulario">
+   <form action="nicolasmoen@live.com" method=post name="formulario" class="form-container">
+    
+     <label for="nombre">Nombre</label>
+     <input type="text" id="fname" name="firstname" placeholder="Dime tu nombre...">
+     <br>
+     <br>
+     <label for="apellido">Apellido</label>
+     <input type="text" id="lname" name="lastname" placeholder="Dime tu apellido...">
+
+     <p><label for="mensaje">Mensaje</label></p>
+     <p><textarea id="subject" name="subject" placeholder="Escribe tu mensaje aqui..."></textarea></p>         
+     <p><button type="submit" class="btn" onclick="enviarformulario()">Enviar</button>
+     <button type="button" class="btn cancel" onclick="closeForm()">Cerrar</button></p>
+   </form>
+ </div>
+ <script src="js/script.js"></script>
+</body>
+</html>
